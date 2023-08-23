@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Drive</title>
+    <script src="https://kit.fontawesome.com/ba3fca236c.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: pink;
+            height: 950px;
+            width: 100%;
+        }
+        .items{
+           background-color: rgb(237, 8, 172);
+           padding: 15px 15px;
+           text-align: center;
+          
+        }
+        .items li{
+            display: inline-block;
+            padding: 15px 15px;
+            size: 100px;
+            font-size: 20px;
+           
+        }
+
+        .search{ 
+            float: right;
+            margin-right: 20px;
+        }
+        .search input{
+            background-color: rgb(248, 68, 197);
+            size: 100px;
+            font-size: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            border: 2px solid rgb(237, 8, 172);
+            left: 5px;
+        }
+        ::placeholder { 
+        color: white;
+        padding-left: 12px;
+        }
+        .items li a{
+        color: white;
+        text-decoration: none;
+        }
+        .items li a:hover 
+        {
+        color: rgb(136, 13, 109);
+        font-size: 20px;
+        }
+        .logo{
+        display: inline-block;
+        position: absolute;
+        left: 25px;
+        top: 6.5px;
+        }
+        .logotext{
+            color:white;
+            bottom: 10px;
+        }
+        .logotext h{
+           
+            bottom: 10px;
+        }
+        .text{
+            display: inline;
+            color: white;
+            size: 100px;
+            font-size: 60px;
+        }
+
+        .container2{
+            width: 700px;
+            height: 450px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            position: absolute;
+            margin-left: 70px;
+
+            margin-top: -700px;
+        }
+
+
+        .p1{
+            float: right;
+            margin-top: -10px;
+            margin-right: 110px;
+            display: inline;
+        }
+        .para{
+            margin-top: 20px;
+            color: white;
+            size: 100px;
+            font-size: 25px;
+        }
+        .button1{
+            margin-top: 70px;
+            background-color: rgb(182, 27, 149);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            border: 2px solid white;
+        }
+        .button2{
+            background-color: rgb(182, 27, 149);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+        .container3{
+            width: 1350px;
+            height: 800px;
+            background-color: white;
+            display: inline-block;
+        }
+        .p4{
+            margin-top: 5%;
+            margin-left: 780px;
+            position: absolute;
+            display: inline;
+        }
+        #parent{
+            position: relative;
+        }
+        .container5{
+            background-color: white;
+            display: inline-block;
+            height: 450px;
+            width: 520px;
+            position: absolute;
+            right: 670px;
+            margin-top: 100px;
+        }
+        .h2{
+            color: rgb(128, 11, 95);
+            size: 100px;
+            font-size: 60px;
+            display: inline-block;
+        }
+        .para2{
+            color: rgb(128, 11, 95);
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .button3{
+            background-color: rgb(248, 68, 197);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            border: 2px solid white;
+            margin-top: 20px;
+        }
+        .container6{
+            width: 1350px;
+            height: 700px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+        }
+        .container7{
+            width: 500px;
+            height: 70px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 490px;
+        }
+        .h4{
+            font-size: 65px;
+            color: white;
+            font-weight: bold;
+        }
+        .container8{
+            width: 500px;
+            height: 30px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 470px;
+        }
+        .para5{
+            color: white;
+            font-size: 25px;
+        }
+        .container9{
+            width: 340px;
+            height: 30px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 0px;
+            margin-left: 470px;
+        }
+        .pic3{
+            margin-top: 40px;
+            margin-left: 120px;
+           
+        }
+        .pic4{
+            margin-top: -305px;
+            margin-left: 480px;
+            
+        }
+        .pic5{
+            margin-top: -305px;
+            margin-left: 840px;
+            
+        }
+        .container10{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 210px;
+        }
+        .container11{
+            width: 250px;
+            height: 50px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 135px;
+        }
+        .container12{
+            width: 220px;
+            height: 50px;
+            background-color: rgb(248, 68, 197);
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 220px;
+        }
+        .t1{
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .container13{
+            width: 1350px;
+            height: 750px;
+            background-color: white;
+            display: inline-block;
+        }
+        .pic6{
+            margin-top: 40px;
+            margin-left: 120px;
+           
+        }
+        .pic7{
+            margin-top: -305px;
+            margin-left: 480px;
+            
+        }
+        .pic8{
+            margin-top: -305px;
+            margin-left: 840px;
+            
+        }
+        .t2{
+            color:rgb(128, 11, 95);
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .container14{
+            width: 250px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 170px;
+        }
+        .container15{
+            width: 250px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 105px;
+        }
+        .container16{
+            width: 220px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 115px;
+        }
+        .container17{
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 210px;
+        }
+        .container18{
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 180px;
+        }
+        .container19{
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 165px;
+        }
+        .t3{
+            color: rgb(128, 11, 95);
+            font-size: 20px;
+        }
+        .container20{
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            margin-left: 175px;
+        }
+        .container20 a i{
+            font-size: 1rem;
+            color:  rgb(248, 68, 197);
+            border-radius: 15px;
+            margin-top: -5px;
+            margin-left: 25px;
+        }
+        .container21{
+            width: 200px;
+            height: 40px;
+            margin-top: -50px;
+            background-color: white;
+            margin-left: 540px;
+        }
+        .container21 a i{
+            margin-top: -10px;
+            margin-left: 25px;
+            font-size: 1rem;
+            color:  rgb(248, 68, 197);
+            border-radius: 15px;
+        }
+        .container22{
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            margin-left: 900px;
+            margin-top: -40px;
+        }
+        .container22 a i{
+            margin-top: -10px;
+            margin-left: 25px;
+            font-size: 1rem;
+            color:  rgb(248, 68, 197);
+            border-radius: 15px;
+        }
+        .container23{
+            width: 1350px;
+            height: 1000px;
+            background-color: white;
+            display: inline-block;
+        }
+        .container24{
+            width: 400px;
+            height: 70px;
+            background-color: white);
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 450px;
+        }
+        .h5{
+            font-size: 65px;
+            color: rgb(128, 11, 95);
+            font-weight: bold;
+        }
+        .container25{
+            width: 500px;
+            height: 30px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 400px;
+        }
+        .para6{
+            color: rgb(128, 11, 95);
+            font-size: 25px;
+        }
+        .pic10{
+            margin-top: 90px;
+            margin-left: 120px;
+           
+        }
+        .pic11{
+            margin-top: -600px;
+            margin-left: 480px;
+            
+        }
+        .pic12{
+            margin-top: -600px;
+            margin-left: 840px;
+            
+        }
+        .container27{
+            width: 1350px;
+            height: 650px;
+            background-color: rgb(44, 44, 44);
+            display: inline-block;
+        }
+        .container28{
+            margin-top: 190px;
+            margin-left: 60px;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container28 ul li{
+            color: white;
+            font-size: 30px;
+            list-style: none;
+        }
+        .container29{
+            margin-top: -310px;
+            margin-left: 60px;
+            width: 110px;
+            height: 50px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container29 h{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container30{
+            margin-top: 10px;
+            margin-left: 380px;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container30 ul li{
+            color: white;
+            font-size: 30px;
+            list-style: none;
+        }
+        .container31{
+            margin-top: -310px;
+            margin-left: 380px;
+            width: 130px;
+            height: 50px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container31 h{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container32{
+            margin-top: -90px;
+            margin-left: 1050px;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container32 h{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container33{
+            margin-top: 0px;
+            margin-left: 920px;
+            width: 400px;
+            height: 50px;
+            background-color: rgb(44, 44, 44);
+        }
+        .container33 p{
+            color: white;
+            font-size: 20px;
+        }
+        .container34{
+            margin-top: 0px;
+            margin-left: 920px;
+            width: 400px;
+            height: 100px;
+            background-color: rgb(44, 44, 44);
+        }
+        .search1{ 
+            float: left;
+            margin-right: 20px;
+        }
+        .search1 input{
+            background-color: rgb(248, 68, 197);
+            size: 100px;
+            font-size: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            border: 2px solid  rgb(248, 68, 197);
+            left: 5px;
+        }
+        .p15 img{
+            margin-right: 15px;
+            
+        }
+        .container35{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(44, 44, 44);;
+            margin-left: 1050px;
+            margin-top: -40px;
+        }
+        .container35 a i{
+            margin-top: -10px;
+            margin-left: 25px;
+            font-size: 1rem;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="navbar">
+            <div class = "logo">
+                <img src="img/p1.png" height="70px" width="85px">
+                <h class="logotext">The ride you can trust</h>
+            </div>
+            <div class="items">
+                <ul>
+                    <li><a href="">Home</a></li> 
+                    <li><a href="">About</a></li>
+                    <li><a href="">Sevices</a></li>
+                    <li><a href="">Contact</a></li>
+                  <div class="search">
+                    <input "text" placeholder="Search.."></input>
+                  </div>
+                </ul>
+             </div>
+              <div class="p1">
+                <img src="img/p2.png" height="600px" width="450px">
+              </div>
+            </header>
+            <main>
+               <div class="container2">
+                <h class="text">You can travel safely and independently!</h>
+                <p class="para">Make your journey harassment free and travell accross the city and country confidently with a women driver. Pink Drive give you assurity to drop you home or in your destination safely.</p>
+               <button class="button1">Contact Us</button>
+               <button class="button2">Our Service</button>
+            </div>
+                <div class="container3">
+                    <div id="parent">
+                       <div class="p4">
+                          <img src="img/p1.png" height="600px" width="500px">
+                       </div>
+                         
+                         <div class="container5">
+                            <h class="h2">Pink Drive and Job Opportunities.</h>
+                            <p class="para2">Pink Drive provides employment to many women. We provide you traning of scooty at very low cost and handover company's scooty on lease to earn money. What you are waiting for? joine our Pink Drive faimly.</p>
+                            <button class="button3">Our Service</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container6">
+                    <div class="container7"> 
+                        <h class="h4">Pink Drive App</h>
+                    </div>
+                    <div class="container8"> 
+                        <p class="para5">Download our app form paly store and apple store for free and make your life easy and comfortable. Move freely in your own way with bear minimum fare.</p>
+                    </div>
+                    <div class="container9"> 
+                        <p class="para5"></p>
+                    </div>
+                    <div class="pic3">
+                        <img src="img/p3.png" height="300px" width="300px">
+                    </div>
+                    <div class="pic4">
+                        <img src="img/p4.jpeg" height="300px" width="300px">
+                    </div>
+                    <div class="pic5">
+                        <img src="img/p5.png" height="300px" width="500px">
+                    </div>
+                    <div class="container10"> 
+                        <h class="t1">Login</h>
+                    </div>
+                    <div class="container11"> 
+                        <h class="t1">Interface</h>
+                    </div>
+                    <div class="container12"> 
+                        <h class="t1">Find Diver</h>
+                    </div>
+                </div>
+                <div class="container13">
+                    <div class="pic6">
+                        <img src="img/p6.png" height="300px" width="300px">
+                    </div>
+                    <div class="pic7">
+                        <img src="img/p7.png" height="300px" width="300px">
+                    </div>
+                    <div class="pic8">
+                        <img src="img/p8.png" height="300px" width="300px">
+                    </div>
+                    <div class="container14"> 
+                        <h class="t2">Sana Zehra</h>
+                    </div>
+                    <div class="container15"> 
+                        <h class="t2">Sheeren Batool</h>
+                    </div>
+                    <div class="container16"> 
+                        <h class="t2">Zanib Fatima</h>
+                    </div>
+                    <div class="container17"> 
+                        <p class="t3">DRIVER</p>
+                    </div>
+                    <div class="container18"> 
+                        <p class="t3">DRIVER</p>
+                    </div>
+                    <div class="container19"> 
+                        <p class="t3">DELIVERY GIRL</p>
+                    </div>
+                    <div class="container20"> 
+                        <a href="https://facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="container21"> 
+                        <a href="https://facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="container22"> 
+                        <a href="https://facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="container23">
+                        <div class="container24"> 
+                            <h class="h5">Recent Posts</h>
+                        </div>
+                        <div class="container25"> 
+                            <p class="para6">Riding application for mobility service of females that is cost-effective and safe Pink Drive offers discounts to all working women to support them.</p>
+                        </div>
+                        <div class="pic10">
+                            <img src="img/p10.png" height="600px" width="300px">
+                        </div>
+                        <div class="pic11">
+                            <img src="img/p11.png" height="600px" width="300px">
+                        </div>
+                        <div class="pic12">
+                            <img src="img/p12.png" height="600px" width="300px">
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="container27">
+                    <div class="container28">
+                        <ul>
+                            <li>Histroy</li>
+                            <li>Our Team</li>
+                            <li>Brand Guidlines</li>
+                            <li>Tearms & Condition</li>
+                            <li>Privacy Polocy</li>
+                        </ul>
+                    </div>
+                    <div class="container29">
+                       <h>About</h>
+                    </div>
+
+                    <div class="container30">
+                        <ul>
+                            <li>How to Ordedr</li>
+                            <li>Our Product</li>
+                            <li>Order Status</li>
+                            <li>Promo</li>
+                            <li>Payment Method</li>
+                        </ul>
+                    </div>
+                    <div class="container31">
+                       <h>Service</h>
+                    </div>
+                    <div class="container32">
+                        <h>Pink Drive</h>
+                     </div>
+                     <div class="container33">
+                        <p>The ride you can trust</p>
+                     </div>
+                     <div class="container34">
+                        <div class="search1">
+                            <input ></input>
+                          </div>
+                          <div class="p15">
+                            <img src="p15.jpeg" height="40px" width="40px">
+                         </div>
+                     </div>
+                     <div class="container35"> 
+                        <a href="https://facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://whatsapp.com">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
